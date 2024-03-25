@@ -29,7 +29,7 @@ public final class BoardFoot {
    */
 
   // Calculates board length with 144 inches^3 volume.
-  public static double calcBoardFoot(double width, double height) {
+  public static double calcBoardFt(final double width, final double height) {
     // Calculate length.
     final double length = (width * height) * VOLUME;
     // Return the length.
@@ -66,7 +66,7 @@ public final class BoardFoot {
       if (userWidth > 0 && userHeight > 0) {
 
         // Call CalculateBoardFoot function.
-        final double calculate = calcBoardFoot(userWidth, userHeight);
+        final double calculate = calcBoardFt(userWidth, userHeight);
 
         // Display board length to user.
         System.out.println("The length of your board foot will be ");
