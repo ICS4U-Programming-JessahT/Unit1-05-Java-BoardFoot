@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Asks the user for the width and height to calculate.
- * The length of a board foot with the volume of 144^3 inches.
- *
+ * program that gets width and height to find length of board.
  *
  * @author Jessah
  * @version 1.0 @2024-03-22
@@ -31,8 +29,7 @@ public final class BoardFoot {
    */
 
   // Calculates board length with 144 inches^3 volume.
-  public static double calculateBoardFoot(
-    final double width, final double height) {
+  public static double calcBoardFoot(double width, double height) {
     // Calculate length.
     final double length = (width * height) * VOLUME;
     // Return the length.
@@ -69,7 +66,7 @@ public final class BoardFoot {
       if (userWidth > 0 && userHeight > 0) {
 
         // Call CalculateBoardFoot function.
-        final double calculate = calculateBoardFoot(userWidth, userHeight);
+        final double calculate = calcBoardFoot(userWidth, userHeight);
 
         // Display board length to user.
         System.out.println("The length of your board foot will be ");
