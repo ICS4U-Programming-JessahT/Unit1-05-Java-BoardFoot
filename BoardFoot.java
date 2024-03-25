@@ -31,8 +31,8 @@ public final class BoardFoot {
    */
 
   // Calculates board length with 144 inches^3 volume.
-  public static double calculateBoardFoot
-  (final double width, final double height) {
+  public static double calculateBoardFoot(
+    final double width, final double height) {
     // Calculate length.
     final double length = (width * height) * VOLUME;
     // Return the length.
